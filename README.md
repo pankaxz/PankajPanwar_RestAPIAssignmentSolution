@@ -6,18 +6,18 @@ APIs:
 -----
 	  => UserController	:	This API gives all operations related to users and roles.
       Mapping = /user
-      
-      Endpoints ->
+
+        Endpoints ->
 		
-      /list_users : GET  : Lists all available users in the Database
+        /list_users : GET  : Lists all available users in the Database
 
-      /add_user    : POST : Adds new user along with its roles. Takes a Request Body of user and a string of role.It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
-      
-      /list_roles : GET : Lists all available roles in the Database
+        /add_user    : POST : Adds new user along with its roles. Takes a Request Body of user and a string of role.It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
+        
+        /list_roles : GET : Lists all available roles in the Database
 
-      /add_role   : POST : Adds new role to DB. We need to provide name of the role. The server checks if  a role with given name exists. If not, then it adds to the DB.
+        /add_role   : POST : Adds new role to DB. We need to provide name of the role. The server checks if  a role with given name exists. If not, then it adds to the DB.
 
-        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 	  => EmployeeController  :  This API provides all the endpoints for the CRUD operations.
         Mapping = /employee
