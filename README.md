@@ -14,7 +14,7 @@ APIs:
 		/list_users : GET  : Lists all available users in the Database
 
     /add_user    : POST : Adds new user along with its roles. Takes a Request Body of user and a string of role. 
-                          It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
+    It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
 		
     /list_roles : GET : Lists all available roles in the Database
 
