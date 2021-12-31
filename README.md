@@ -5,8 +5,7 @@ Graded Coding Assignment 6 (Spring Boot - RESTful APIs)
 APIs:
 -----
 	  => UserController	:	This API gives all operations related to users and roles.
-		
-		Mapping = /user
+		  Mapping = /user
 
 		  Endpoints ->
 		
@@ -17,14 +16,10 @@ APIs:
       /list_roles : GET : Lists all available roles in the Database
 
       /add_role   : POST : Adds new role to DB. We need to provide name of the role. The server checks if  a role with given name exists. If not, then it adds to the DB.
-						   
-		
-						   
-		Note: There is no option to get list of all users as that would be undesirable for security aspect.
-		
-		
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 	  => EmployeeController  :  This API provides all the endpoints for the CRUD operations.
-    
         Mapping = /employee
 
         Endpoints ->
@@ -48,12 +43,12 @@ APIs:
 ------------
 Permissions:
 ------------
-	> The application has one admin data added to the DB at runtime using Commandline runner. 
-	(username : admin1)
+	=> The application has one admin data added to the DB at runtime using Commandline runner. 
+	(username : admin1, password : 123)
 	
-	> All endpoints of UserController require ADMIN role to run.
+	=> All endpoints of UserController require ADMIN role to run.
 	
-	> In EmployeeController, add endpoint is accessible to ADMIN only. Other endpoints can be used by 
+	=> In EmployeeController, add endpoint is accessible to ADMIN only. Other endpoints can be used by 
 	both ADMIN and USER.
 	
 
