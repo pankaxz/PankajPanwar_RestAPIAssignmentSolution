@@ -56,4 +56,4 @@ Permissions:
 ------------
 Screenshots: 
 ------------
-	> Please find the screenshots in 'Screenshot' folder. They have been divided into three folders based on the entites and their usecases. 
+	=> Please find the screenshots in 'Screenshot' folder. They have been divided into three folders based on the entites and their usecases. 
