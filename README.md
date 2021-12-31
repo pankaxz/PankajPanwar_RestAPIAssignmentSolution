@@ -5,9 +5,9 @@ Graded Coding Assignment 6 (Spring Boot - RESTful APIs)
 APIs:
 -----
 	  => UserController	:	This API gives all operations related to users and roles.
-		  Mapping = /user
-
-		  Endpoints ->
+      Mapping = /user
+      
+      Endpoints ->
 		
       /list_users : GET  : Lists all available users in the Database
 
