@@ -4,8 +4,7 @@ Graded Coding Assignment 6 (Spring Boot - RESTful APIs)
 -----
 APIs:
 -----
-	> UserController
-		This API gives all operations related to users and roles.
+	  => UserController	:	This API gives all operations related to users and roles.
 		
 		Mapping = /user
 
@@ -25,26 +24,25 @@ APIs:
 		Note: There is no option to get list of all users as that would be undesirable for security aspect.
 		
 		
-	  => EmployeeController
-  This API provides all the endpoints for the CRUD operations.
-  
-  Mapping = /employee
+	  => EmployeeController  :  This API provides all the endpoints for the CRUD operations.
+    
+        Mapping = /employee
 
-  Endpoints :
-  
-  /list_employee  : GET    : Lists all employees in the Database
-  
-  /add_employee   : POST   : Adds new employee to Database. Takes a response Body of employee details.
+        Endpoints ->
+    
+          /list_employee:GET: Lists all employees in the Database
+      
+          /add_employee:POST: Adds new employee to Database. Takes a response Body of employee details.
 
-  /{empID}  : GET    : Get employee data by giving Id. Takes id as a parameter. 
+          /{empID}:GET: Get employee data by giving Id. Takes id as a parameter. 
 
-  /update_employee/{empID}  : POST   : Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
-  
-  /delete_employee/{empID} 	 : DELETE : Deletes the record with given Id. Takes id as a parameter. 
-  
-  /search  : GET    : Get an employee by giving firstName as a parameter.
-
-  /sort : GET    : Lists all employees in sorted order. Takes string parameter as order (asc/desc)
+          /update_employee/{empID}:POST:Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
+      
+          /delete_employee/{empID}:DELETE:Deletes the record with given Id. Takes id as a parameter. 
+      
+          /search:GET:Get an employee by giving firstName as a parameter.
+    
+          /sort:GET: Lists all employees in sorted order. Takes string parameter as order (asc/desc)
 
 
 
