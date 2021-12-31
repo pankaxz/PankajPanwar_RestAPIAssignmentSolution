@@ -24,19 +24,19 @@ APIs:
 
         Endpoints ->
     
-        /list_employee:GET: Lists all employees in the Database
+        /list_employee: GET : Lists all employees in the Database
     
-        /add_employee:POST: Adds new employee to Database. Takes a response Body of employee details.
+        /add_employee:  POST  : Adds new employee to Database. Takes a response Body of employee details.
 
-        /{empID}:GET: Get employee data by giving Id. Takes id as a parameter. 
+        /{empID}: GET : Get employee data by giving Id. Takes id as a parameter. 
 
-        /update_employee/{empID}:POST:Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
+        /update_employee/{empID}: POST  :Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
     
-        /delete_employee/{empID}:DELETE:Deletes the record with given Id. Takes id as a parameter. 
+        /delete_employee/{empID}: DELETE  :Deletes the record with given Id. Takes id as a parameter. 
     
-        /search:GET:Get an employee by giving firstName as a parameter.
+        /search:  GET :Get an employee by giving firstName as a parameter.
   
-        /sort:GET: Lists all employees in sorted order. Takes string parameter as order (asc/desc)
+        /sort:  GET : Lists all employees in sorted order. Takes string parameter as order (asc/desc)
 
 
 
