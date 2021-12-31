@@ -14,7 +14,7 @@ APIs:
 		/list_users : GET  : Lists all available users in the Database
 
     /add_user    : POST : Adds new user along with its roles. Takes a Request Body of user and a string of role. 
-    It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
+                        It checks if role exists, otherwise adds it. Then it adds the user to DB with encrypted password.
 		
     /list_roles : GET : Lists all available roles in the Database
 
@@ -25,26 +25,26 @@ APIs:
 		Note: There is no option to get list of all users as that would be undesirable for security aspect.
 		
 		
-	> EmployeeController
-		This API provides all the endpoints for the CRUD operations.
-		
-		Mapping = /employee
+	  => EmployeeController
+  This API provides all the endpoints for the CRUD operations.
+  
+  Mapping = /employee
 
-		Endpoints :
-		
-		/list_employee  : GET    : Lists all employees in the Database
-		
-		/add_employee   : POST   : Adds new employee to Database. Takes a response Body of employee details.
+  Endpoints :
+  
+  /list_employee  : GET    : Lists all employees in the Database
+  
+  /add_employee   : POST   : Adds new employee to Database. Takes a response Body of employee details.
 
-    /{empID}  : GET    : Get employee data by giving Id. Takes id as a parameter. 
+  /{empID}  : GET    : Get employee data by giving Id. Takes id as a parameter. 
 
-    /update_employee/{empID}  : POST   : Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
-		
-		/delete_employee/{empID} 	 : DELETE : Deletes the record with given Id. Takes id as a parameter. 
-		
-		/search  : GET    : Get an employee by giving firstName as a parameter.
-	
-		/sort : GET    : Lists all employees in sorted order. Takes string parameter as order (asc/desc)
+  /update_employee/{empID}  : POST   : Updates the given record in DB. Takes a response Body of updated employee details and employeeID. 
+  
+  /delete_employee/{empID} 	 : DELETE : Deletes the record with given Id. Takes id as a parameter. 
+  
+  /search  : GET    : Get an employee by giving firstName as a parameter.
+
+  /sort : GET    : Lists all employees in sorted order. Takes string parameter as order (asc/desc)
 
 
 
